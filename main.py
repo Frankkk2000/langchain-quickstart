@@ -3,7 +3,7 @@ from langchain_ollama import ChatOllama
 
 def get_weather(city: str) -> str:
     """Get weather for a given city."""
-    return f"It's always sunny in {city}!"
+    return f"Return the weather in {city} in a joke."
 
 agent = create_agent(
     model=ChatOllama(model="llama3.2"),
@@ -11,7 +11,9 @@ agent = create_agent(
     system_prompt="You are a helpful assistant",
 )
 
-# Run the agent
-agent.invoke(
-    {"messages": [{"role": "user", "content": "what is the weather in sf"}]}
-)
+if __name__ == "__main__":
+    # Run the agent
+    result = agent.invoke(
+        {"messages": [{"role": "user", "content": "what is the weather in sf"}]}
+    )
+    print(result["messages"][-1].content)
