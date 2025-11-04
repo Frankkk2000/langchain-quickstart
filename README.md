@@ -18,7 +18,7 @@ pyenv local 3.13.0
 ### Install Ollama
 Follow the instructions at [https://ollama.com/download/](https://ollama.com/download/) to install Ollama on your system.
 
-### Install and run a local model
+#### Download and serve a local model
 ```bash
 ollama serve
 ollama pull llama3.2
@@ -37,7 +37,7 @@ source venv/bin/activate
 pip install langchain==1.0.3 langchain-ollama==1.0.0
 ```
 
-or install from `requirements.txt`:
+or install directly from `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
