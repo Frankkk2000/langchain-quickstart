@@ -2,6 +2,8 @@
 
 Simple and easy way to start learning LangChain
 
+📖 **Read the full tutorial:** [Run LangChain Locally in 15 Minutes Without a Single API Key](https://fabiohiroki.medium.com/run-langchain-locally-in-15-minutes-without-a-single-api-key-ca260af98afc)
+
 ## Pre requisites
 
 ### Python 3.13.0
